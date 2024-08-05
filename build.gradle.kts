@@ -3,9 +3,9 @@ import java.net.URL
 import org.jetbrains.dokka.gradle.DokkaTask
 
 plugins {
-    kotlin("jvm") version "1.9.10"
+    kotlin("jvm") version "1.3.72"
     `java-gradle-plugin`
-    id("org.jetbrains.dokka") version "1.8.20"
+    id("org.jetbrains.dokka") version "0.9.18"
 }
 
 gradlePlugin {
@@ -41,9 +41,9 @@ sourceSets {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8", "1.9.10"))
-    implementation(kotlin("reflect", "1.9.10"))
-    implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.7.2")
+    implementation(kotlin("stdlib-jdk8", "1.3.72"))
+    implementation(kotlin("reflect", "1.3.72"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
     implementation(gradleApi())
     implementation(gradleKotlinDsl())
     implementation("org.apache.velocity", "velocity-engine-core", "2.3")
